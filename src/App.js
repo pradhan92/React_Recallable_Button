@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+//import Button from './Components/Button';
+import Button from'./Components/Button';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App = ()=> {
+    return <div>
+        <h1>Use full website</h1>
+        <h3>Which Website do you want to open ?</h3>
+       <div className='hero'>
+        {/* re-callable button call in here */}
+       <Button name="google" link="https://www.google.com"/>
+        <Button name="edge" link="https://www.edge.com"/>
+        <Button name="safari" link="https://safari.com"/>
+        <Button name="lorem" link="https://www.lipsum.com"/>
+       </div>
     </div>
-  );
 }
-
 export default App;
